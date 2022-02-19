@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@500&display=swap');
+:root {
+    --negro: #191919;
+    --blanco: #ffffff;
+    --rojo: #bd06f4;
+    --verde: #ceeed6;
+    --verde2: #623bb1;
+    --hoverC: #000000;
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    /* margin: 0 auto; */
+    background-color: var(--negro);
+}
+
+header {
+    background-color: var(--negro);
+    padding: 40px;
+    text-align: center;
+    box-shadow: -5px 5px 10px var(--negro);
+    z-index: 2;
+}
+
+ul>li {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--rojo);
+    letter-spacing: 3px;
+}
+
+.gh {
+    font-family: 'M PLUS 1 Code', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    /* box-shadow: -5px -1px 15px var(--negro), 5px 1px 15px var(--negro); */
+    background-color: var(--negro);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.peli {
+    opacity: 70%;
+    filter: grayscale(70%);
+    /* display: flex; */
+    margin: 12px;
+    transition: all .2s ease;
+}
+
+.peli:hover {
+    opacity: 100%;
+    filter: grayscale(0%);
+}
+
+.peli img {
+    border: 1.5px solid var(--rojo);
+    border-radius: 0;
+    transition: all .2s ease;
+}
+
+.peli img:hover {
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px var(--hoverC), -7px -7px 10px var(--hoverC), -7px 7px 10px var(--hoverC), 7px -7px 10px var(--hoverC);
+    /* cursor: url("https://img.icons8.com/color/50/000000/totoro.png"), progress; */
+}
+
+button {
+    text-align: center;
+    background-color: var(--rojo);
+    border: 1px solid var(--negro);
+    padding: 8px;
+    border-radius: 0;
+    transition: all .2s ease;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: var(--rojo);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.contenedor_peli {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenedor_peli p {
+    display: block;
+    font-size: 1.3em;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+    color: var(--blanco);
+}
+
+.contenedor_peli p::selection {
+    background-color: var(--rojo);
+}
